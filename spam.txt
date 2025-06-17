@@ -1,0 +1,6 @@
+1. Login page - User -> email and password in data.json
+2. Fetching the headers from that data.json file.
+3. Emails Classification - Spam or Ham
+4. Fetching all the emails from email. (previous) -> use lazy-loader
+5. Classify Spam or Ham Seperately in folder. - create ui for dashboard, sidebar-folders (all, inbox, primary, spam)
+6. Email Filteration. - auto delete spam messages

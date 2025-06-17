@@ -1,0 +1,14 @@
+<div class="login-container">
+  <h2>🔐 Login</h2>
+  <div class="input-group">
+    <input [(ngModel)]="email" type="text" placeholder="Email" required />
+  </div>
+  <div class="input-group">
+    <input [(ngModel)]="password" type="password" placeholder="Password" required />
+  </div>
+  <button (click)="login()" [disabled]="loading">
+    <span *ngIf="!loading">Login</span>
+    <span *ngIf="loading" class="loader-btn">Loading...</span>
+  </button>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>

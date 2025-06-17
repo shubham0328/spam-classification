@@ -1,0 +1,30 @@
+<div class="header">
+  <h2>📩 Classified Emails</h2>
+  <button class="logout-btn" (click)="logout()">🚪 Logout</button>
+</div>
+
+<div class="email-list-container" (scroll)="onScroll($event)">
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Classification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let email of displayedEmails" class="fade-in">
+        <td>{{ email.subject }}</td>
+        <td [ngClass]="{'spam': email.classification === 'Spam', 'ham': email.classification === 'Ham'}">
+          {{ email.classification }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="loadingMore" class="loader">
+    <p>Loading more emails...</p>
+  </div>
+</div>
+
+<div class="no-emails" *ngIf="displayedEmails.length === 0">
+  <p>🚀 No emails found.</p>
+</div>

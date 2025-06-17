@@ -1,0 +1,159 @@
+/* 🔹 Container Styling */
+.email-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #ffffff, #e3f2fd);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* 🔹 Heading */
+  .email-container h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* 🔹 Responsive Table */
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  /* 🔹 Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.8s ease-in-out;
+  }
+  
+  /* 🔹 Table Header */
+  th {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  /* 🔹 Table Rows */
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🔹 Hover Effects */
+  tbody tr:hover {
+    background: #f1faff;
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+  
+  /* 🔹 Classification Colors */
+  .classification {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* ✅ Spam Style */
+  .spam {
+    background: linear-gradient(90deg, #ff4e50, #ff0000);
+    color: #fff;
+    box-shadow: 0px 3px 5px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* ✅ Ham Style */
+  .ham {
+    background: linear-gradient(90deg, #4caf50, #2e7d32);
+    color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 255, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* 🔹 No Emails Found Message */
+  .no-emails p {
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🟠 Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* 📌 Responsive Styles */
+  @media (max-width: 768px) {
+    .email-container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    th, td {
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    .email-container h2 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .email-container h2 {
+      font-size: 20px;
+    }
+  }
+
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d43f3f;
+  }
+  
+  

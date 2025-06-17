@@ -1,0 +1,12 @@
+<div class="email-list">
+    <h2>Email Classification</h2>
+    <ul>
+      <li *ngFor="let email of emails">
+        <strong>{{ email.subject }}</strong>
+        <span [ngClass]="{'spam': email.classification === 'Spam', 'ham': email.classification === 'Ham'}">
+          {{ email.classification }}
+        </span>
+      </li>
+    </ul>
+  </div>
+  
